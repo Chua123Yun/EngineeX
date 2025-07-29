@@ -1,0 +1,18 @@
+extends RigidBody2D
+
+@onready var trigger = $Area2D
+
+func _ready():
+    gravity_scale = 0
+    trigger.connect("body_entered", Callable(self, "_on_trigger_entered"))
+    contact_monitor = true
+    contacts_reported = 1
+
+func _on_trigger_entered(body):
+    if body.name == "Player":
+        gravity_scale = 1  # Start falling
+
+func _integrate_forces(state):
+    for i in get_colliding_bodies():
+        if i.name == "Player":
+            i.die()
