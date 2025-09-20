@@ -434,10 +434,6 @@ limit_right = 1688
 limit_bottom = 1079
 
 [node name="Control" parent="Player/Camera2D" instance=ExtResource("2_wvqr8")]
-offset_left = -992.0
-offset_top = -584.0
-offset_right = 1160.0
-offset_bottom = 623.0
 
 [node name="AudioStreamPlayer2D" parent="Player/Camera2D" instance=ExtResource("17_gbhyl")]
 attenuation = 8.63167e-05

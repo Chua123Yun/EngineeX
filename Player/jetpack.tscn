@@ -45,4 +45,3 @@ frame_progress = 0.6429
 
 [node name="JetPackSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_x00wo")
-bus = &"SoundEffect"
