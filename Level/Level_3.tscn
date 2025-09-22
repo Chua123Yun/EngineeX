@@ -437,3 +437,9 @@ limit_bottom = 1079
 
 [node name="AudioStreamPlayer2D" parent="Player/Camera2D" instance=ExtResource("17_gbhyl")]
 attenuation = 8.63167e-05
+
+[node name="Tiles19" parent="." instance=ExtResource("3_bkaik")]
+position = Vector2(-254, -983)
+
+[node name="Tiles30" parent="." instance=ExtResource("3_bkaik")]
+position = Vector2(-518, -982)

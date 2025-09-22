@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bc224rwtfd3cp"]
+[gd_scene load_steps=15 format=3 uid="uid://bc224rwtfd3cp"]
 
 [ext_resource type="PackedScene" uid="uid://n1stiniw3sjg" path="res://Platform & Tiles/Tiles.tscn" id="1_xb7j6"]
 [ext_resource type="PackedScene" uid="uid://c3t0y4qvyre8x" path="res://Level/level_pass.tscn" id="2_7u8b5"]
@@ -12,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://dnkdwm0fsgamy" path="res://Platform & Tiles/small_platform.tscn" id="8_fy8o2"]
 [ext_resource type="PackedScene" uid="uid://bebg0kwbh7b1q" path="res://Player/ammo.tscn" id="9_fy8o2"]
 [ext_resource type="PackedScene" uid="uid://uw45gdeouyh4" path="res://Enemy/spike_piece.tscn" id="10_426nr"]
+[ext_resource type="PackedScene" uid="uid://c6xycya1ta0ue" path="res://Enemy/AcidPool.tscn" id="13_ygg8v"]
+[ext_resource type="FontFile" uid="uid://bvmb75d0vr7ft" path="res://grapesoda_2/GrapeSoda.ttf" id="14_i730h"]
 
 [node name="Level_4" type="Node2D"]
 metadata/_edit_vertical_guides_ = [-2120.0, -3240.0, -576.0, -1096.0]
@@ -44,10 +46,6 @@ limit_bottom = 1776
 attenuation = 0.0145786
 
 [node name="Control" parent="Player" instance=ExtResource("4_s2cjx")]
-offset_left = 80.0
-offset_top = 16.0
-offset_right = 80.0
-offset_bottom = 21.0
 
 [node name="CharacterBody2D5" parent="." instance=ExtResource("1_xb7j6")]
 position = Vector2(96, -160)
@@ -285,3 +283,30 @@ scale = Vector2(3.1, 3.1)
 [node name="SpikePieces8" parent="." instance=ExtResource("10_426nr")]
 position = Vector2(461, 176)
 scale = Vector2(3.1, 3.1)
+
+[node name="AcidPool" parent="." instance=ExtResource("13_ygg8v")]
+position = Vector2(1016, -97)
+
+[node name="AcidPool2" parent="." instance=ExtResource("13_ygg8v")]
+position = Vector2(1104, -94)
+
+[node name="AcidPool3" parent="." instance=ExtResource("13_ygg8v")]
+position = Vector2(1196, -92)
+
+[node name="AcidPool4" parent="." instance=ExtResource("13_ygg8v")]
+position = Vector2(1295, -92)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -442.0
+offset_top = 1373.0
+offset_right = 645.0
+offset_bottom = 1567.0
+theme_override_fonts/normal_font = ExtResource("14_i730h")
+theme_override_font_sizes/bold_italics_font_size = 1311
+theme_override_font_sizes/normal_font_size = 50
+text = "\"Shift\" to dash.
+Dash is available when resume normal coloring.
+"
+
+[node name="Tiles15" parent="." instance=ExtResource("1_xb7j6")]
+position = Vector2(-219, -733)

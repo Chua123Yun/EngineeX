@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cyefihto015ce"]
+[gd_scene load_steps=18 format=3 uid="uid://cyefihto015ce"]
 
 [ext_resource type="PackedScene" uid="uid://n1stiniw3sjg" path="res://Platform & Tiles/Tiles.tscn" id="1_qfoqn"]
 [ext_resource type="PackedScene" uid="uid://c3t0y4qvyre8x" path="res://Level/level_pass.tscn" id="2_f7hy0"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://csjofk3uggncv" path="res://Enemy/falling_rock.tscn" id="12_o3nov"]
 [ext_resource type="Texture2D" uid="uid://d17i8l3kngcnw" path="res://Background/Cave_Background.png" id="13_2fq8m"]
 [ext_resource type="PackedScene" uid="uid://bebg0kwbh7b1q" path="res://Player/ammo.tscn" id="14_5xwo5"]
+[ext_resource type="PackedScene" uid="uid://c6xycya1ta0ue" path="res://Enemy/AcidPool.tscn" id="17_mbpse"]
 
 [node name="Level_5" type="Node2D"]
 metadata/_edit_vertical_guides_ = [-535.0, 2449.0, -1808.0]
@@ -47,10 +48,6 @@ limit_bottom = 3784
 [node name="AudioStreamPlayer2D" parent="Player/Camera2D" instance=ExtResource("4_wtege")]
 
 [node name="Control" parent="Player" instance=ExtResource("4_g28r7")]
-offset_left = 80.0
-offset_top = 12.0
-offset_right = 80.0
-offset_bottom = 17.0
 
 [node name="CharacterBody2D5" parent="." instance=ExtResource("1_qfoqn")]
 self_modulate = Color(0.0885599, 0.0885599, 0.0885599, 1)
@@ -449,3 +446,68 @@ position = Vector2(552, 1864)
 scale = Vector2(0.42, 0.42)
 
 [node name="Ammo" parent="." instance=ExtResource("14_5xwo5")]
+
+[node name="AcidPool" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(706, 575)
+
+[node name="AcidPool2" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(813, 581)
+
+[node name="AcidPool3" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(913, 591)
+
+[node name="AcidPool4" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(991, 586)
+
+[node name="AcidPool5" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(1112, 589)
+
+[node name="AcidPool6" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(1227, 584)
+
+[node name="AcidPool7" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(1338, 586)
+
+[node name="AcidPool8" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(1446, 589)
+
+[node name="AcidPool9" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(1574, 586)
+
+[node name="AcidPool10" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(1699, 584)
+
+[node name="AcidPool11" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(1819, 590)
+
+[node name="AcidPool12" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(1789, 3390)
+rotation = 3.14159
+
+[node name="AcidPool13" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(775, 3388)
+rotation = 3.14159
+
+[node name="AcidPool14" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(580, 3388)
+rotation = 3.14159
+
+[node name="AcidPool15" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(1144, 3388)
+rotation = 3.14159
+
+[node name="AcidPool16" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(934, 3388)
+rotation = 3.14159
+
+[node name="AcidPool17" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(1648, 3388)
+rotation = 3.14159
+
+[node name="AcidPool18" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(1504, 3392)
+rotation = 3.14159
+
+[node name="AcidPool19" parent="." instance=ExtResource("17_mbpse")]
+position = Vector2(1324, 3390)
+rotation = 3.14159

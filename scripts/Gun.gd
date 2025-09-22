@@ -88,7 +88,7 @@ func _process(_delta):
 		_reload_one_bullet()   # start reloading loop
 
 func _reload_one_bullet():
-	# Remove one spent bullet (reload)
+	# Reload one  bullet
 	if launch_count > 0:
 		launch_count -= 1
 		print("Reloaded 1 bullet, remaining spent:", launch_count)
