@@ -169,10 +169,6 @@ position = Vector2(-362, -144)
 FIRE_RATE = 0.5
 
 [node name="Control" parent="Player" instance=ExtResource("8_gpjpy")]
-offset_left = 80.0
-offset_top = 16.0
-offset_right = 80.0
-offset_bottom = 21.0
 
 [node name="Tiles4" parent="." instance=ExtResource("1_rriw4")]
 position = Vector2(1400, -336)

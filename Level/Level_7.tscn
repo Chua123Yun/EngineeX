@@ -35,10 +35,6 @@ limit_bottom = 808
 [node name="AudioStreamPlayer2D" parent="Player/Camera2D" instance=ExtResource("3_li645")]
 
 [node name="Control" parent="Player" instance=ExtResource("3_n5n4j")]
-offset_left = 88.0
-offset_top = 24.0
-offset_right = 88.0
-offset_bottom = 29.0
 
 [node name="CharacterBody2D4" parent="." instance=ExtResource("1_goiux")]
 position = Vector2(1072, 736)

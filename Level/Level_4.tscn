@@ -310,3 +310,24 @@ Dash is available when resume normal coloring.
 
 [node name="Tiles15" parent="." instance=ExtResource("1_xb7j6")]
 position = Vector2(-219, -733)
+
+[node name="AcidPool5" parent="." instance=ExtResource("13_ygg8v")]
+position = Vector2(170, 1512)
+
+[node name="AcidPool6" parent="." instance=ExtResource("13_ygg8v")]
+position = Vector2(273, 1518)
+
+[node name="AcidPool7" parent="." instance=ExtResource("13_ygg8v")]
+position = Vector2(382, 1518)
+
+[node name="AcidPool8" parent="." instance=ExtResource("13_ygg8v")]
+position = Vector2(502, 1512)
+
+[node name="AcidPool9" parent="." instance=ExtResource("13_ygg8v")]
+position = Vector2(612, 1514)
+
+[node name="AcidPool10" parent="." instance=ExtResource("13_ygg8v")]
+position = Vector2(730, 1514)
+
+[node name="AcidPool11" parent="." instance=ExtResource("13_ygg8v")]
+position = Vector2(835, 1512)

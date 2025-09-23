@@ -37,10 +37,6 @@ limit_bottom = 1854
 [node name="AudioStreamPlayer2D" parent="Player/Camera2D" instance=ExtResource("3_8hb5c")]
 
 [node name="Control" parent="Player" instance=ExtResource("3_psx7u")]
-offset_left = 68.0
-offset_top = 5.0
-offset_right = 68.0
-offset_bottom = 10.0
 
 [node name="Tiles6" parent="." instance=ExtResource("1_g3r0d")]
 position = Vector2(1368, 384)

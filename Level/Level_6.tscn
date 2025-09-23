@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cjxmip4p7sbkx"]
+[gd_scene load_steps=13 format=3 uid="uid://cjxmip4p7sbkx"]
 
 [ext_resource type="PackedScene" uid="uid://bebg0kwbh7b1q" path="res://Player/ammo.tscn" id="1_axpqe"]
 [ext_resource type="PackedScene" uid="uid://n1stiniw3sjg" path="res://Platform & Tiles/Tiles.tscn" id="1_gvcbt"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://bw1rjtct6tg3r" path="res://Enemy/danger_tile.tscn" id="5_svy13"]
 [ext_resource type="PackedScene" uid="uid://csjofk3uggncv" path="res://Enemy/falling_rock.tscn" id="6_tlitw"]
 [ext_resource type="Texture2D" uid="uid://d17i8l3kngcnw" path="res://Background/Cave_Background.png" id="7_soh2d"]
+[ext_resource type="PackedScene" uid="uid://c6xycya1ta0ue" path="res://Enemy/AcidPool.tscn" id="12_m74pa"]
 
 [node name="Level_6" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [3408.0]
@@ -35,10 +36,6 @@ limit_right = 888
 limit_bottom = 3408
 
 [node name="Control" parent="Player" instance=ExtResource("4_qfn67")]
-offset_left = 71.0
-offset_top = 16.0
-offset_right = 71.0
-offset_bottom = 21.0
 
 [node name="AudioStreamPlayer2D" parent="Player" instance=ExtResource("4_k64vm")]
 volume_db = -16.0
@@ -220,3 +217,25 @@ position = Vector2(-360, 48)
 
 [node name="danger_long_tile3" parent="." instance=ExtResource("3_md1ft")]
 position = Vector2(-264, 48)
+
+[node name="AcidPool" parent="." instance=ExtResource("12_m74pa")]
+position = Vector2(-193, 842)
+rotation = 1.5708
+
+[node name="AcidPool" parent="AcidPool" instance=ExtResource("12_m74pa")]
+position = Vector2(219, -3.00001)
+
+[node name="AcidPool2" parent="AcidPool" instance=ExtResource("12_m74pa")]
+position = Vector2(380, 2.99998)
+
+[node name="AcidPool3" parent="AcidPool" instance=ExtResource("12_m74pa")]
+position = Vector2(542, 9.99998)
+
+[node name="AcidPool4" parent="AcidPool" instance=ExtResource("12_m74pa")]
+position = Vector2(694, -3.00003)
+
+[node name="AcidPool5" parent="AcidPool" instance=ExtResource("12_m74pa")]
+position = Vector2(849, 6.99996)
+
+[node name="AcidPool6" parent="AcidPool" instance=ExtResource("12_m74pa")]
+position = Vector2(1015, 6.99996)

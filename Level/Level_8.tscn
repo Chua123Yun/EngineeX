@@ -53,8 +53,6 @@ top_level = true
 position = Vector2(-1400, 396)
 
 [node name="Control" parent="Player" instance=ExtResource("4_vvjv7")]
-offset_left = 80.0
-offset_right = 80.0
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-16, 12)
